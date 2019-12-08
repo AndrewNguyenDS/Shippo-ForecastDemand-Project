@@ -1,0 +1,7 @@
+"This project found the solution for problem in shipper capacity of Shippo. HR needs to know how many shipper we need for next week?
+Thus, this project will follow some tasks:
+1/ Forecast demand for Shippo by City and District
+2/ Calculate the capacity of shippo if we don't change anything in number of shipper
+3/ Find the number of shipper we need 
+4/ Send the notification for HR
+It brings many effect to HR and operation of Shippo. Great new for Shippo and Operation Research team"
