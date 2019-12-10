@@ -341,8 +341,8 @@ for df in [data_hn, data_hcm]:
 from sklearn import datasets, linear_model
 from sklearn.model_selection import train_test_split
 
-## làm mô hình cho ca 1 riêng cho kết quả tốt hơn
-## Lam mo hinh cho tung ngay trong tuan
+## Define initial model for each period will be get the better result
+## Define initial model for each day will be get better result than one
 model_dict = {}
 locs = ['HN',"HCM"]
 for i in range(len(model_data)):
@@ -473,3 +473,34 @@ temp = temp.apply(addActual, axis = 1)
 temp = temp[[0,1,'adjusted',3]]
 temp.to_csv("shippo_forecast_week.csv", header=False, index=False)
 
+def run_menu():
+    print("*" *48)
+    print("-" *10 + " What would you like to do? " + "-" *10)
+    print("\n")
+    print("1. Look up the weather on a specific day")
+    print("2. Predict the weather on a specific day")
+    print("\n")
+
+    option = input("Enter option: ")
+
+    while True:
+        if option == 2 or option == 1 or option == 9:
+            break
+        option = input("Enter option: ")
+    return option
+
+def run_program(option):
+    if option == 1:
+        print("1")
+    elif option == 2:
+        predict_weather()
+
+if __name__== "__main__":
+    train_data()
+
+    while True:
+        option = run_menu()
+        if option == 9:
+            break
+        else:
+            run_program(option)
