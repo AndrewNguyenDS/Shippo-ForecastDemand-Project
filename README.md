@@ -19,5 +19,4 @@ Thus, this project will follow some tasks:
 2/ Calculate the capacity of shippo if we don't change anything in a number of shippers
 3/ Find the number of the shipper we need 
 4/ Send the notification for HR
-It brings many effects to HR and the operation of Shippo. Great new for Shippo and Operation Research team
-And the detail of it is in the below:
+It brings many effects to HR and the operation of Shippo. Great new for Shippo and Operation Research team.
